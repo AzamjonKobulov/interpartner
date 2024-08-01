@@ -714,6 +714,12 @@ h2{
 .mt-4{
   margin-top: 1rem;
 }
+.mt-6{
+  margin-top: 1.5rem;
+}
+.mt-\[1\.4375rem\]{
+  margin-top: 1.4375rem;
+}
 .flex{
   display: flex;
 }
@@ -2043,6 +2049,10 @@ body.no-scroll {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -2080,6 +2090,11 @@ body.no-scroll {
   .md\:py-6{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+
+  .md\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .md\:text-7xl{
@@ -2538,6 +2553,10 @@ body.no-scroll {
 
   .xl\:items-center{
     align-items: center;
+  }
+
+  .xl\:p-10{
+    padding: 2.5rem;
   }
 
   .xl\:px-10{
