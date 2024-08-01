@@ -59,7 +59,11 @@
           >
             <!-- Logo -->
             <a href="#">
-              <img src="./assets/images/logo.svg" alt="Logo" />
+              <img
+                src="./assets/images/logo.svg"
+                alt="Logo"
+                class="w-20 h-8 lg:w-auto lg:h-auto"
+              />
             </a>
             <!-- Links -->
             <ul class="hidden lg:flex items-center gap-8 text-brand-gray-500">
@@ -1062,11 +1066,11 @@
         class="flex flex-col lg:justify-start 3xl:justify-between overflow-x-hidden"
       >
         <!-- Slider -->
-        <div
-          class="max-w-base w-full min-h-[calc(100vh-224px)] lg:h-full mx-auto 2xl:flex-1 slider px-4"
-        >
+        <div class="max-w-base w-full mx-auto 2xl:flex-1 slider px-4">
           <!-- Slide 1 -->
-          <div class="slide hidden flex flex-col lg:flex-row justify-between">
+          <div
+            class="min-h-[calc(100vh-224px)] lg:min-h-[calc(100vh-172px)] slide hidden flex flex-col lg:flex-row justify-between"
+          >
             <div
               class="lg:w-1/2 flex flex-col-reverse lg:flex-col justify-between gap-5 xs:pb-5 xs:pt-10"
             >
@@ -1099,7 +1103,9 @@
             </div>
           </div>
           <!-- Slide 2 -->
-          <div class="slide hidden flex flex-col lg:flex-row justify-between">
+          <div
+            class="min-h-[calc(100vh-224px)] lg:min-h-[calc(100vh-172px)] slide hidden flex flex-col lg:flex-row justify-between"
+          >
             <div
               class="lg:w-1/2 flex flex-col-reverse lg:flex-col justify-between gap-5 xs:pb-5 xs:pt-10"
             >
@@ -1132,7 +1138,9 @@
             </div>
           </div>
           <!-- Slide 3 -->
-          <div class="slide hidden flex flex-col lg:flex-row justify-between">
+          <div
+            class="min-h-[calc(100vh-224px)] lg:min-h-[calc(100vh-172px)] slide hidden flex flex-col lg:flex-row justify-between"
+          >
             <div
               class="lg:w-1/2 flex flex-col-reverse lg:flex-col justify-between gap-5 xs:pb-5 xs:pt-10"
             >
