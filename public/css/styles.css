@@ -679,9 +679,6 @@ h2{
 .col-span-3{
   grid-column: span 3 / span 3;
 }
-.col-span-5{
-  grid-column: span 5 / span 5;
-}
 .col-span-4{
   grid-column: span 4 / span 4;
 }
@@ -719,12 +716,6 @@ h2{
 }
 .mt-4{
   margin-top: 1rem;
-}
-.mt-6{
-  margin-top: 1.5rem;
-}
-.mt-\[1\.4375rem\]{
-  margin-top: 1.4375rem;
 }
 .flex{
   display: flex;
@@ -904,8 +895,11 @@ h2{
 .max-w-96{
   max-width: 24rem;
 }
-.max-w-\[118rem\]{
-  max-width: 118rem;
+.max-w-\[120rem\]{
+  max-width: 120rem;
+}
+.max-w-\[1920px\]{
+  max-width: 1920px;
 }
 .max-w-\[432px\]{
   max-width: 432px;
@@ -932,15 +926,6 @@ h2{
 .max-w-min{
   max-width: -moz-min-content;
   max-width: min-content;
-}
-.max-w-\[120rem\]{
-  max-width: 120rem;
-}
-.max-w-\[1888px\]{
-  max-width: 1888px;
-}
-.max-w-\[1920px\]{
-  max-width: 1920px;
 }
 .flex-1{
   flex: 1 1 0%;
@@ -982,9 +967,6 @@ h2{
 }
 .grid-cols-3{
   grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-.grid-cols-5{
-  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 .grid-cols-7{
   grid-template-columns: repeat(7, minmax(0, 1fr));
@@ -1327,6 +1309,9 @@ h2{
 .pr-2{
   padding-right: 0.5rem;
 }
+.pr-4{
+  padding-right: 1rem;
+}
 .pr-5{
   padding-right: 1.25rem;
 }
@@ -1347,9 +1332,6 @@ h2{
 }
 .pt-8{
   padding-top: 2rem;
-}
-.pr-4{
-  padding-right: 1rem;
 }
 .text-left{
   text-align: left;
@@ -1847,20 +1829,20 @@ body.no-scroll {
     padding-left: 1.25rem;
   }
 
-  .xs\:pr-5{
-    padding-right: 1.25rem;
-  }
-
-  .xs\:pt-10{
-    padding-top: 2.5rem;
-  }
-
   .xs\:pl-6{
     padding-left: 1.5rem;
   }
 
   .xs\:pr-4{
     padding-right: 1rem;
+  }
+
+  .xs\:pr-5{
+    padding-right: 1.25rem;
+  }
+
+  .xs\:pt-10{
+    padding-top: 2.5rem;
   }
 
   .xs\:text-start{
@@ -1902,18 +1884,6 @@ body.no-scroll {
 
 @media (min-width: 640px){
 
-  .sm\:col-span-2{
-    grid-column: span 2 / span 2;
-  }
-
-  .sm\:col-span-4{
-    grid-column: span 4 / span 4;
-  }
-
-  .sm\:col-span-1{
-    grid-column: span 1 / span 1;
-  }
-
   .sm\:mb-0{
     margin-bottom: 0px;
   }
@@ -1937,10 +1907,6 @@ body.no-scroll {
   .sm\:-translate-y-1\/2{
     --tw-translate-y: -50%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .sm\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .sm\:flex-row{
@@ -2119,14 +2085,14 @@ body.no-scroll {
     border-bottom-width: 1px;
   }
 
-  .md\:py-6{
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
   .md\:px-4{
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .md\:py-6{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .md\:text-7xl{
@@ -2377,10 +2343,6 @@ body.no-scroll {
     border-left-width: calc(0px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
-  .lg\:p-10{
-    padding: 2.5rem;
-  }
-
   .lg\:p-6{
     padding: 1.5rem;
   }
@@ -2455,6 +2417,10 @@ body.no-scroll {
     padding-left: 1rem;
   }
 
+  .lg\:pl-7{
+    padding-left: 1.75rem;
+  }
+
   .lg\:pl-8{
     padding-left: 2rem;
   }
@@ -2473,14 +2439,6 @@ body.no-scroll {
 
   .lg\:pt-5{
     padding-top: 1.25rem;
-  }
-
-  .lg\:pl-7{
-    padding-left: 1.75rem;
-  }
-
-  .lg\:pl-5{
-    padding-left: 1.25rem;
   }
 
   .lg\:text-32{
@@ -2559,10 +2517,6 @@ body.no-scroll {
     right: 25%;
   }
 
-  .xl\:h-10{
-    height: 2.5rem;
-  }
-
   .xl\:h-104{
     height: 6.5rem;
   }
@@ -2596,24 +2550,16 @@ body.no-scroll {
     padding-right: 2.5rem;
   }
 
-  .xl\:pl-5{
-    padding-left: 1.25rem;
-  }
-
-  .xl\:pr-10{
-    padding-right: 2.5rem;
+  .xl\:pl-6{
+    padding-left: 1.5rem;
   }
 
   .xl\:pl-7{
     padding-left: 1.75rem;
   }
 
-  .xl\:pl-6{
-    padding-left: 1.5rem;
-  }
-
-  .xl\:pr-5{
-    padding-right: 1.25rem;
+  .xl\:pr-10{
+    padding-right: 2.5rem;
   }
 
   .xl\:text-7xl{
@@ -2642,16 +2588,28 @@ body.no-scroll {
 
 @media (min-width: 1440px){
 
-  .\32xl\:h-20{
-    height: 5rem;
+  .\32xl\:right-0{
+    right: 0px;
   }
 
   .\32xl\:h-10{
     height: 2.5rem;
   }
 
+  .\32xl\:h-20{
+    height: 5rem;
+  }
+
+  .\32xl\:w-1\/2{
+    width: 50%;
+  }
+
   .\32xl\:w-4\/5{
     width: 80%;
+  }
+
+  .\32xl\:w-3\/4{
+    width: 75%;
   }
 
   .\32xl\:max-w-80{
@@ -2665,10 +2623,6 @@ body.no-scroll {
   .\32xl\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-  }
-
-  .\32xl\:pl-6{
-    padding-left: 1.5rem;
   }
 
   .\32xl\:text-88{
@@ -2691,10 +2645,6 @@ body.no-scroll {
 }
 
 @media (min-width: 1600px){
-
-  .\33xl\:right-0{
-    right: 0px;
-  }
 
   .\33xl\:w-auto{
     width: auto;
