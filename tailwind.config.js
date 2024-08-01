@@ -13,7 +13,7 @@ module.exports = {
         "3xl": "1600px",
       },
       maxWidth: {
-        base: "1920px",
+        base: "122rem",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],

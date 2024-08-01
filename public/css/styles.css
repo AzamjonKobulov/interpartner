@@ -619,8 +619,8 @@ h2{
   left: 0px;
   right: 0px;
 }
-.-right-4{
-  right: -1rem;
+.-right-6{
+  right: -1.5rem;
 }
 .-top-20{
   top: -5rem;
@@ -657,12 +657,6 @@ h2{
 }
 .top-5{
   top: 1.25rem;
-}
-.-right-6{
-  right: -1.5rem;
-}
-.-right-8{
-  right: -2rem;
 }
 .\!z-20{
   z-index: 20 !important;
@@ -914,7 +908,7 @@ h2{
   max-width: 80%;
 }
 .max-w-base{
-  max-width: 1920px;
+  max-width: 122rem;
 }
 .max-w-full{
   max-width: 100%;
@@ -926,6 +920,15 @@ h2{
 .max-w-min{
   max-width: -moz-min-content;
   max-width: min-content;
+}
+.max-w-\[120rem\]{
+  max-width: 120rem;
+}
+.max-w-\[1888px\]{
+  max-width: 1888px;
+}
+.max-w-\[1920px\]{
+  max-width: 1920px;
 }
 .flex-1{
   flex: 1 1 0%;
@@ -1329,6 +1332,9 @@ h2{
 }
 .pt-8{
   padding-top: 2rem;
+}
+.pr-4{
+  padding-right: 1rem;
 }
 .text-center{
   text-align: center;
@@ -1823,6 +1829,14 @@ body.no-scroll {
     padding-top: 2.5rem;
   }
 
+  .xs\:pl-6{
+    padding-left: 1.5rem;
+  }
+
+  .xs\:pr-4{
+    padding-right: 1rem;
+  }
+
   .xs\:text-start{
     text-align: start;
   }
@@ -2195,18 +2209,6 @@ body.no-scroll {
     max-height: 36rem;
   }
 
-  .lg\:min-h-\[calc\(100vh-172px\)\]{
-    min-height: calc(100vh - 172px);
-  }
-
-  .lg\:min-h-\[calc\(100vh-190px\)\]{
-    min-height: calc(100vh - 190px);
-  }
-
-  .lg\:min-h-\[calc\(100vh-192px\)\]{
-    min-height: calc(100vh - 192px);
-  }
-
   .lg\:min-h-\[calc\(100vh-196px\)\]{
     min-height: calc(100vh - 196px);
   }
@@ -2494,12 +2496,12 @@ body.no-scroll {
 
 @media (min-width: 1280px){
 
-  .xl\:right-1\/4{
-    right: 25%;
-  }
-
   .xl\:-right-8{
     right: -2rem;
+  }
+
+  .xl\:right-1\/4{
+    right: 25%;
   }
 
   .xl\:h-10{
@@ -2538,6 +2540,10 @@ body.no-scroll {
     padding-right: 2.5rem;
   }
 
+  .xl\:pl-7{
+    padding-left: 1.75rem;
+  }
+
   .xl\:text-7xl{
     font-size: 4.5rem;
     line-height: 1;
@@ -2564,10 +2570,6 @@ body.no-scroll {
 
 @media (min-width: 1440px){
 
-  .\32xl\:h-14{
-    height: 3.5rem;
-  }
-
   .\32xl\:h-20{
     height: 5rem;
   }
@@ -2588,18 +2590,13 @@ body.no-scroll {
     font-size: 88px;
   }
 
-  .\32xl\:text-base{
-    font-size: 1rem;
-    line-height: 1.5rem;
+  .\32xl\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .\32xl\:text-xl{
     font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .\32xl\:text-lg{
-    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 
@@ -2616,11 +2613,6 @@ body.no-scroll {
 
   .\33xl\:w-auto{
     width: auto;
-  }
-
-  .\33xl\:translate-y-9{
-    --tw-translate-y: 2.25rem;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .\33xl\:-translate-y-9{
