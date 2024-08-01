@@ -872,6 +872,9 @@ h2{
 .w-screen{
   width: 100vw;
 }
+.w-\[4\.875rem\]{
+  width: 4.875rem;
+}
 .min-w-\[50\%\]{
   min-width: 50%;
 }
@@ -1274,6 +1277,10 @@ h2{
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.py-2\.5{
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
 }
 .pb-10{
   padding-bottom: 2.5rem;
