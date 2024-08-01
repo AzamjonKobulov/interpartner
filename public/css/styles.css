@@ -679,6 +679,12 @@ h2{
 .col-span-3{
   grid-column: span 3 / span 3;
 }
+.col-span-5{
+  grid-column: span 5 / span 5;
+}
+.col-span-4{
+  grid-column: span 4 / span 4;
+}
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -979,6 +985,9 @@ h2{
 }
 .grid-cols-5{
   grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+.grid-cols-7{
+  grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 .flex-col{
   flex-direction: column;
@@ -1341,6 +1350,9 @@ h2{
 }
 .pr-4{
   padding-right: 1rem;
+}
+.text-left{
+  text-align: left;
 }
 .text-center{
   text-align: center;
@@ -1755,6 +1767,14 @@ body.no-scroll {
     right: 1.25rem;
   }
 
+  .xs\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
+  .xs\:col-span-5{
+    grid-column: span 5 / span 5;
+  }
+
   .xs\:block{
     display: block;
   }
@@ -1881,6 +1901,18 @@ body.no-scroll {
 }
 
 @media (min-width: 640px){
+
+  .sm\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
+  .sm\:col-span-4{
+    grid-column: span 4 / span 4;
+  }
+
+  .sm\:col-span-1{
+    grid-column: span 1 / span 1;
+  }
 
   .sm\:mb-0{
     margin-bottom: 0px;
@@ -2580,6 +2612,10 @@ body.no-scroll {
     padding-left: 1.5rem;
   }
 
+  .xl\:pr-5{
+    padding-right: 1.25rem;
+  }
+
   .xl\:text-7xl{
     font-size: 4.5rem;
     line-height: 1;
@@ -2608,6 +2644,10 @@ body.no-scroll {
 
   .\32xl\:h-20{
     height: 5rem;
+  }
+
+  .\32xl\:h-10{
+    height: 2.5rem;
   }
 
   .\32xl\:w-4\/5{
