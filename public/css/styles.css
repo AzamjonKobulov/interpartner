@@ -2536,6 +2536,11 @@ body.no-scroll {
     align-items: center;
   }
 
+  .xl\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .xl\:pl-5{
     padding-left: 1.25rem;
   }
