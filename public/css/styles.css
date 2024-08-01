@@ -908,7 +908,7 @@ h2{
   max-width: 85rem;
 }
 .max-w-base{
-  max-width: 87rem;
+  max-width: 1920px;
 }
 .max-w-full{
   max-width: 100%;
@@ -920,6 +920,9 @@ h2{
 .max-w-min{
   max-width: -moz-min-content;
   max-width: min-content;
+}
+.max-w-\[118rem\]{
+  max-width: 118rem;
 }
 .flex-1{
   flex: 1 1 0%;
