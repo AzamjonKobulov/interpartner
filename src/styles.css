@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply font-inter;
+  }
+
+  h2 {
+    @apply font-inter font-bold uppercase xs:text-lg sm:text-2xl lg:text-32 text-brand-dark xl:leading-10;
+  }
+}
+
+/* Target the scrollbar track */
+::-webkit-scrollbar {
+  height: 0.25rem; /* width of the scrollbar */
+  width: 0.25rem;
+}
+
+/* Target the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #acacac; /* color of the scrollbar thumb */
+  border-radius: 0.3125rem; /* roundness of the scrollbar thumb */
+}
+
+/* Optional: Target the scrollbar track on hover */
+::-webkit-scrollbar-track:hover {
+  background-color: #dcdcdc; /* color when hovering over scrollbar track */
+}
+
+.swiper-pagination {
+  @apply !pb-5 lg:!pb-10;
+}
+
+.swiper-pagination-bullet {
+  @apply !size-1 !rounded-none !bg-[#C3C3C3];
+}
+
+.swiper-pagination-bullet-active {
+  @apply !h-1 !w-5 !rounded-none !bg-brand-red transition-all duration-300;
+}
+
+input[type="radio"]:checked + label > div > div {
+  @apply bg-brand-red;
+}
+
+input[type="radio"]:checked + label > div {
+  @apply border-brand-red;
+}
+
+.hidden-socials {
+  transform: translateY(100%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.visible-socials {
+  transform: translateY(0);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 1;
+}
+
+.title-arrow {
+  @apply w-5 h-6 xs:w-8 xs:h-9 md:w-9 md:h-9 2xl:w-14 2xl:h-11 absolute bottom-1 xs:bottom-4 2xl:bottom-7 -right-7 xs:-right-12 2xl:-right-[4.375rem] group-hover:-translate-y-3 group-hover:translate-x-4 xl:group-hover:-translate-y-5 2xl:group-hover:-translate-y-6 xl:group-hover:translate-x-8 group-hover:xl:translate-x-10 group-hover:2xl:translate-x-12 transition-transform duration-300;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.active {
+  display: flex !important;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
