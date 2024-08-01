@@ -793,6 +793,9 @@ h2{
 .h-\[1000px\]{
   height: 1000px;
 }
+.h-2\/3{
+  height: 66.666667%;
+}
 .max-h-0{
   max-height: 0px;
 }
@@ -2080,6 +2083,10 @@ body.no-scroll {
 
 @media (min-width: 1024px){
 
+  .lg\:absolute{
+    position: absolute;
+  }
+
   .lg\:bottom-10{
     bottom: 2.5rem;
   }
@@ -2251,6 +2258,10 @@ body.no-scroll {
 
   .lg\:w-full{
     width: 100%;
+  }
+
+  .lg\:w-3\/5{
+    width: 60%;
   }
 
   .lg\:flex-1{
@@ -2490,6 +2501,10 @@ body.no-scroll {
 
 @media (min-width: 1280px){
 
+  .xl\:aspect-square{
+    aspect-ratio: 1 / 1;
+  }
+
   .xl\:h-104{
     height: 6.5rem;
   }
@@ -2504,6 +2519,22 @@ body.no-scroll {
 
   .xl\:h-\[600px\]{
     height: 600px;
+  }
+
+  .xl\:h-4\/5{
+    height: 80%;
+  }
+
+  .xl\:h-\[90\%\]{
+    height: 90%;
+  }
+
+  .xl\:h-\[95\%\]{
+    height: 95%;
+  }
+
+  .xl\:w-3\/5{
+    width: 60%;
   }
 
   .xl\:flex-row{
@@ -2553,8 +2584,20 @@ body.no-scroll {
 
 @media (min-width: 1440px){
 
+  .\32xl\:static{
+    position: static;
+  }
+
   .\32xl\:h-14{
     height: 3.5rem;
+  }
+
+  .\32xl\:h-auto{
+    height: auto;
+  }
+
+  .\32xl\:w-4\/5{
+    width: 80%;
   }
 
   .\32xl\:max-w-80{
