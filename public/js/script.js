@@ -50,9 +50,17 @@ const header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
-    header.classList.add("-translate-y-6", "lg:-translate-y-8");
+    header.classList.add(
+      "-translate-y-6",
+      "lg:-translate-y-8",
+      "3xl:-translate-y-9"
+    );
   } else {
-    header.classList.remove("-translate-y-6", "lg:-translate-y-8");
+    header.classList.remove(
+      "-translate-y-6",
+      "lg:-translate-y-8",
+      "3xl:-translate-y-9"
+    );
   }
 });
 

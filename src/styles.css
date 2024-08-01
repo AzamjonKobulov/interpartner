@@ -69,7 +69,7 @@ input[type="radio"]:checked + label > div {
 }
 
 .title-arrow {
-  @apply w-5 h-6 xs:w-8 xs:h-9 md:w-9 md:h-9 2xl:w-14 2xl:h-11 absolute bottom-1 xs:bottom-4 2xl:bottom-7 -right-7 xs:-right-12 2xl:-right-[4.375rem] group-hover:-translate-y-3 group-hover:translate-x-4 xl:group-hover:-translate-y-5 2xl:group-hover:-translate-y-6 xl:group-hover:translate-x-8 group-hover:xl:translate-x-10 group-hover:2xl:translate-x-12 transition-transform duration-300;
+  @apply w-5 h-6 xs:w-8 xs:h-9 md:w-9 md:h-9 2xl:w-12 2xl:h-10 3xl:w-14 3xl:h-11 absolute bottom-1 lg:bottom-3 2xl:bottom-4 3xl:bottom-6 -right-7 xs:-right-12 2xl:-right-14 3xl:-right-[4.375rem] group-hover:-translate-y-1 group-hover:translate-x-2 group-hover:xl:-translate-y-3 group-hover:2xl:-translate-y-4 group-hover:xl:translate-x-3 group-hover:xl:translate-x-4 group-hover:2xl:translate-x-6 transition-transform duration-300;
 }
 
 body.no-scroll {
