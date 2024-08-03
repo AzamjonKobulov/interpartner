@@ -227,6 +227,13 @@ document.addEventListener("DOMContentLoaded", () => {
       // Show the selected product info section
       buttonsContainer.classList.add("hidden"); // Hide the buttons container
       productInfos[index].classList.remove("hidden");
+
+      // Scroll to the top of the page
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+
       fixedBody();
     });
   });
@@ -237,6 +244,12 @@ document.addEventListener("DOMContentLoaded", () => {
       productInfos.forEach((info) => {
         info.classList.add("hidden");
         unFixedBody();
+      });
+
+      // Scroll to the top of the page
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
       });
     });
   });
