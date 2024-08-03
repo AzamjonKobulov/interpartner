@@ -210,24 +210,34 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const buttons = document.querySelectorAll(".btn-open");
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".product-button");
+  const productInfos = document.querySelectorAll(".product-info");
   const backButtons = document.querySelectorAll(".back-button");
-  const productInfoSections = document.querySelectorAll(".product-info");
+  const buttonsContainer = document.querySelector(".buttons-container"); // Adjust the selector as needed
 
   buttons.forEach((button, index) => {
     button.addEventListener("click", () => {
-      productInfoSections[index].classList.remove("hidden");
-      backButtons.forEach((backButton) =>
-        backButton.classList.remove("hidden")
-      );
+      // Hide all product info sections
+      productInfos.forEach((info) => {
+        info.classList.add("hidden");
+        info.classList.remove("flex", "lg:grid");
+      });
+
+      // Show the selected product info section
+      buttonsContainer.classList.add("hidden"); // Hide the buttons container
+      productInfos[index].classList.remove("hidden");
+      fixedBody();
     });
   });
 
   backButtons.forEach((backButton) => {
     backButton.addEventListener("click", () => {
-      productInfoSections.forEach((section) => section.classList.add("hidden"));
-      backButtons.forEach((backButton) => backButton.classList.add("hidden"));
+      buttonsContainer.classList.remove("hidden"); // Show the buttons container
+      productInfos.forEach((info) => {
+        info.classList.add("hidden");
+        unFixedBody();
+      });
     });
   });
 });
