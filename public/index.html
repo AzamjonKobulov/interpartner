@@ -1914,14 +1914,52 @@
           <div class="content-container">
             <!-- Product 1 -->
             <div
-              class="product-info hidden fixed inset-0 z-50 bg-brand-dark/80 grid place-content-center"
+              class="product-info hidden fixed inset-0 z-50 bg-brand-dark/80"
             >
               <div
-                class="overflow-auto h-full lg:h-screen w-screen lg:w-auto flex flex-col-reverse lg:grid grid-cols-2 bg-white"
+                class="overflow-auto h-full lg:h-screen w-screen flex flex-col lg:grid grid-cols-2 bg-white"
               >
-                <!-- Left -->
+                <!-- Images -->
+                <div class="lg:h-full lg:order-2">
+                  <button
+                    class="back-button flex lg:hidden items-center gap-3 font-bold text-brand-gray-500 uppercase my-5 ml-4"
+                  >
+                    <img src="./assets/images/icon-back.png" alt="Back arrow" />
+                    назад
+                  </button>
+                  <div class="lg:h-full bg-brand-gray-700">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper w-full h-full">
+                      <div class="swiper-wrapper pb-10">
+                        <div class="swiper-slide grid place-content-center">
+                          <img
+                            src="./assets/images/img-slider.png"
+                            alt="Img Slider"
+                            class="h-[90%] sm:h-auto mx-auto object-cover"
+                          />
+                        </div>
+                        <div class="swiper-slide grid place-content-center">
+                          <img
+                            src="./assets/images/img-slider.png"
+                            alt="Img Slider"
+                            class="h-[90%] sm:h-auto mx-auto object-cover"
+                          />
+                        </div>
+                        <div class="swiper-slide grid place-content-center">
+                          <img
+                            src="./assets/images/img-slider.png"
+                            alt="Img Slider"
+                            class="h-[90%] sm:h-auto mx-auto object-cover"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Texts -->
                 <div
-                  class="flex flex-col justify-between py-5 lg:py-10 px-4 xl:px-10 lg:px-10"
+                  class="lg:order-1 flex flex-col justify-between py-5 lg:py-10 px-4 xl:px-10 lg:px-10"
                 >
                   <!-- Top -->
                   <div class="space-y-6 lg:space-y-10">
@@ -2307,9 +2345,17 @@
                     </div>
                   </div>
                 </div>
-
-                <!-- Right -->
-                <div class="lg:h-full">
+              </div>
+            </div>
+            <!-- Product 2 -->
+            <div
+              class="product-info hidden fixed inset-0 z-50 bg-brand-dark/80"
+            >
+              <div
+                class="overflow-auto h-full lg:h-screen w-screen flex flex-col lg:grid grid-cols-2 bg-white"
+              >
+                <!-- Images -->
+                <div class="lg:h-full lg:order-2">
                   <button
                     class="back-button flex lg:hidden items-center gap-3 font-bold text-brand-gray-500 uppercase my-5 ml-4"
                   >
@@ -2346,18 +2392,9 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <!-- Product 2 -->
-            <div
-              class="product-info hidden fixed inset-0 z-50 bg-brand-dark/80 grid place-content-center"
-            >
-              <div
-                class="overflow-auto h-full lg:h-screen w-screen lg:w-auto flex flex-col-reverse lg:grid grid-cols-2 bg-white"
-              >
-                <!-- Left -->
+                <!-- Texts -->
                 <div
-                  class="flex flex-col justify-between py-5 lg:py-10 px-4 xl:px-10 lg:px-10"
+                  class="lg:order-1 flex flex-col justify-between py-5 lg:py-10 px-4 xl:px-10 lg:px-10"
                 >
                   <!-- Top -->
                   <div class="space-y-6 lg:space-y-10">
@@ -2743,16 +2780,24 @@
                     </div>
                   </div>
                 </div>
-
-                <!-- Right -->
-                <div class="lg:h-full">
+              </div>
+            </div>
+            <!-- Product 3 -->
+            <div
+              class="product-info hidden fixed inset-0 z-50 bg-brand-dark/80"
+            >
+              <div
+                class="overflow-auto h-full lg:h-screen w-screen flex flex-col lg:grid grid-cols-2 bg-white"
+              >
+                <!-- Images -->
+                <div class="lg:h-full lg:order-2">
                   <button
                     class="back-button flex lg:hidden items-center gap-3 font-bold text-brand-gray-500 uppercase my-5 ml-4"
                   >
                     <img src="./assets/images/icon-back.png" alt="Back arrow" />
                     назад
                   </button>
-                  <div class="h-1/2 lg:h-full bg-brand-gray-700">
+                  <div class="lg:h-full bg-brand-gray-700">
                     <!-- Swiper -->
                     <div class="swiper mySwiper w-full h-full">
                       <div class="swiper-wrapper pb-10">
@@ -2782,18 +2827,9 @@
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <!-- Product 3 -->
-            <div
-              class="product-info hidden fixed inset-0 z-50 bg-brand-dark/80 grid place-content-center"
-            >
-              <div
-                class="overflow-auto h-full lg:h-screen w-screen lg:w-auto flex flex-col-reverse lg:grid grid-cols-2 bg-white"
-              >
-                <!-- Left -->
+                <!-- Texts -->
                 <div
-                  class="flex flex-col justify-between py-5 lg:py-10 px-4 xl:px-10 lg:px-10"
+                  class="lg:order-1 flex flex-col justify-between py-5 lg:py-10 px-4 xl:px-10 lg:px-10"
                 >
                   <!-- Top -->
                   <div class="space-y-6 lg:space-y-10">
@@ -3176,45 +3212,6 @@
                       >
                         Запросить цены
                       </button>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Right -->
-                <div class="lg:h-full">
-                  <button
-                    class="back-button flex lg:hidden items-center gap-3 font-bold text-brand-gray-500 uppercase my-5 ml-4"
-                  >
-                    <img src="./assets/images/icon-back.png" alt="Back arrow" />
-                    назад
-                  </button>
-                  <div class="lg:h-full bg-brand-gray-700">
-                    <!-- Swiper -->
-                    <div class="swiper mySwiper w-full h-full">
-                      <div class="swiper-wrapper pb-10">
-                        <div class="swiper-slide grid place-content-center">
-                          <img
-                            src="./assets/images/img-slider.png"
-                            alt="Img Slider"
-                            class="h-[90%] sm:h-auto mx-auto object-cover"
-                          />
-                        </div>
-                        <div class="swiper-slide grid place-content-center">
-                          <img
-                            src="./assets/images/img-slider.png"
-                            alt="Img Slider"
-                            class="h-[90%] sm:h-auto mx-auto object-cover"
-                          />
-                        </div>
-                        <div class="swiper-slide grid place-content-center">
-                          <img
-                            src="./assets/images/img-slider.png"
-                            alt="Img Slider"
-                            class="h-[90%] sm:h-auto mx-auto object-cover"
-                          />
-                        </div>
-                      </div>
-                      <div class="swiper-pagination"></div>
                     </div>
                   </div>
                 </div>

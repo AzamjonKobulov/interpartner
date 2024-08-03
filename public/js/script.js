@@ -227,6 +227,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Show the selected product info section
       buttonsContainer.classList.add("hidden"); // Hide the buttons container
       productInfos[index].classList.remove("hidden");
+
       fixedBody();
     });
   });
