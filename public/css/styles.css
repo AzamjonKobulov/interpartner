@@ -1955,6 +1955,11 @@ body.no-scroll {
     padding-bottom: 2rem;
   }
 
+  .sm\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .sm\:pb-6{
     padding-bottom: 1.5rem;
   }
