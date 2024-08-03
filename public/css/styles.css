@@ -1881,8 +1881,16 @@ body.no-scroll {
     margin-bottom: 0px;
   }
 
+  .sm\:mt-4{
+    margin-top: 1rem;
+  }
+
   .sm\:block{
     display: block;
+  }
+
+  .sm\:flex{
+    display: flex;
   }
 
   .sm\:h-auto{
@@ -2322,6 +2330,10 @@ body.no-scroll {
 
   .lg\:gap-24{
     gap: 6rem;
+  }
+
+  .lg\:gap-5{
+    gap: 1.25rem;
   }
 
   .lg\:space-y-10 > :not([hidden]) ~ :not([hidden]){
