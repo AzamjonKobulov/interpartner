@@ -1330,6 +1330,9 @@ h2{
 .pt-8{
   padding-top: 2rem;
 }
+.pt-4{
+  padding-top: 1rem;
+}
 .text-left{
   text-align: left;
 }
@@ -1774,6 +1777,10 @@ body.no-scroll {
     height: 24rem;
   }
 
+  .xs\:h-80{
+    height: 20rem;
+  }
+
   .xs\:w-auto{
     width: auto;
   }
@@ -1868,6 +1875,11 @@ body.no-scroll {
   .xs\:text-xs{
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .xs\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .xs\:leading-\[3rem\]{
@@ -2078,10 +2090,20 @@ body.no-scroll {
     gap: 0px;
   }
 
+  .md\:gap-8{
+    gap: 2rem;
+  }
+
   .md\:space-y-3 > :not([hidden]) ~ :not([hidden]){
     --tw-space-y-reverse: 0;
     margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-y-4 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
   }
 
   .md\:divide-x > :not([hidden]) ~ :not([hidden]){

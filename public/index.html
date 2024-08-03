@@ -3356,8 +3356,8 @@
                 производитель шкафов
               </p>
 
-              <ul class="max-w-[432px] lg:space-y-8 text-end">
-                <li class="space-y-4">
+              <ul class="max-w-[432px] space-y-5 lg:space-y-8 text-end">
+                <li class="space-y-1 md:space-y-4">
                   <h2 class="text-white">ТЗ</h2>
                   <p
                     class="flex-1 text-white/50 xl:text-lg font-jetbrains text-xs xs:text-sm sm:text-base leading-4 sm:leading-5"
@@ -3366,7 +3366,7 @@
                     техническому заданию
                   </p>
                 </li>
-                <li data-aos-duration="600" class="space-y-4">
+                <li class="space-y-1 md:space-y-4">
                   <h2 class="text-white">1 день</h2>
                   <p
                     class="flex-1 text-white/50 xl:text-lg font-jetbrains text-xs xs:text-sm sm:text-base leading-4 sm:leading-5"
@@ -3376,7 +3376,7 @@
                     транспортной компанией: СДЕК, ПЭК и др.
                   </p>
                 </li>
-                <li data-aos-duration="700" class="space-y-4">
+                <li class="space-y-1 md:space-y-4">
                   <h2 class="text-white">ПНР</h2>
                   <p
                     class="flex-1 text-white/50 xl:text-lg font-jetbrains text-xs xs:text-sm sm:text-base leading-4 sm:leading-5"
@@ -4370,7 +4370,7 @@
       <!-- Submit -->
       <section id="submit">
         <!-- Title -->
-        <div class="border-y border-brand-gray-200 mb-5 sm:mb-0">
+        <div class="border-y border-brand-gray-200 sm:mb-0">
           <div
             class="max-w-base mx-auto h-16 lg:h-20 xl:h-104 flex items-center text-sm xs:text-base text-brand-gray-600 font-bold uppercase px-4 xl:px-10"
           >
@@ -4380,20 +4380,38 @@
 
         <!-- Submit Application -->
         <div class="max-w-[120rem] mx-auto grid lg:grid-cols-2">
-          <div
-            class="relative after:absolute after:inset-0 after:bg-brand-dark/30 after:z-10"
-          >
-            <img
-              src="./assets/images/img-master.jpg"
-              alt="Master Image"
-              class="w-full h-full object-cover object-[30%]"
-            />
+          <div class="xs:h-80 grid lg:flex grid-cols-2">
+            <div
+              class="relative after:absolute after:inset-0 after:bg-brand-dark/30 after:z-10"
+            >
+              <img
+                src="./assets/images/img-master.jpg"
+                alt="Master Image"
+                class="w-full h-full object-cover object-[30%]"
+              />
+            </div>
+            <!-- Texts on Mobile -->
+            <div class="lg:hidden space-y-10 pt-4 lg:pt-10 px-4 lg:px-10">
+              <div class="space-y-4 xs:space-y-6">
+                <h2 class="text-sm xs:text-lg sm:text-2xl lg:text-32">
+                  У вас есть техническое задание, готовая заявка или вопросы?
+                </h2>
+                <p
+                  class="text-brand-gray-500 font-jetbrains text-xs xs:text-base"
+                >
+                  Введите ваши данные, <br />
+                  мы перезвоним вам в ближайшее время.
+                </p>
+              </div>
+            </div>
           </div>
-          <!-- Texts -->
-          <div class="flex flex-col justify-between gap-8">
+          <!-- Texts & Form -->
+          <div class="flex flex-col justify-between gap-5 md:gap-8">
             <div class="flex flex-col gap-10">
-              <!-- Top -->
-              <div class="space-y-10 pt-6 lg:pt-10 px-4 lg:px-10">
+              <!-- Texts on Desktop -->
+              <div
+                class="hidden lg:block space-y-10 pt-6 lg:pt-10 px-4 lg:px-10"
+              >
                 <div class="space-y-4 xs:space-y-6">
                   <h2
                     data-aos="fade-up"
