@@ -2399,6 +2399,10 @@ body.no-scroll {
     border-left-width: calc(0px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
+  .lg\:overflow-auto{
+    overflow: auto;
+  }
+
   .lg\:p-6{
     padding: 1.5rem;
   }
