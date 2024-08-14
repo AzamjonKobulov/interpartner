@@ -83,3 +83,25 @@ body.no-scroll {
 .no-scroll {
   overflow: hidden;
 }
+
+/* Map Styles */
+
+[class*="ymaps-2-1-79-events-pane"] {
+  display: none !important;
+}
+
+[class*="ground-pane"] {
+  filter: grayscale(1);
+}
+
+.balloon__address {
+  color: yellow;
+}
+
+.balloon a {
+  color: red;
+}
+
+[class*="balloon__close-button"] {
+  opacity: 1;
+}
