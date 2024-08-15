@@ -381,21 +381,25 @@ function init() {
     {
       iconLayout: "default#image",
       iconImageHref: "/assets/images/map-tooltip.svg",
-      iconImageSize: [247, 96],
-      iconImageOffset: [-19, -44],
+      iconImageSize: window.innerWidth < 768 ? [120, 48] : [247, 96], // Smaller size on mobile
+      iconImageOffset: window.innerWidth < 768 ? [-60, -24] : [-124, -48], // Adjust offset accordingly
     }
   );
 
-  map.controls.remove("geolocationControl"); // удаляем геолокацию
-  map.controls.remove("searchControl"); // удаляем поиск
-  map.controls.remove("trafficControl"); // удаляем контроль трафика
-  map.controls.remove("typeSelector"); // удаляем тип
-  map.controls.remove("fullscreenControl"); // удаляем кнопку перехода в полноэкранный режим
-  map.controls.remove("zoomControl"); // удаляем контрол зуммирования
-  map.controls.remove("rulerControl"); // удаляем контрол правил
-  // map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+  map.controls.remove("geolocationControl");
+  map.controls.remove("searchControl");
+  map.controls.remove("trafficControl");
+  map.controls.remove("typeSelector");
+  map.controls.remove("fullscreenControl");
+  map.controls.remove("zoomControl");
+  map.controls.remove("rulerControl");
 
   map.geoObjects.add(placemark);
+
+  let mapPane = document.querySelector(".ymaps-2-1-79-ground-pane");
+  if (mapPane) {
+    mapPane.style.filter = "grayscale(0.8)";
+  }
 }
 
 ymaps.ready(init);
