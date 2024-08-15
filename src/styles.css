@@ -86,12 +86,12 @@ body.no-scroll {
 
 /* Map Styles */
 
-[class*="ymaps-2-1-79-events-pane"] {
+/* [class*="ymaps-2-1-79-events-pane"] {
   display: none !important;
 }
 
 [class*="ground-pane"] {
-  filter: grayscale(1);
+  filter: grayscale(0);
 }
 
 .balloon__address {
@@ -104,4 +104,4 @@ body.no-scroll {
 
 [class*="balloon__close-button"] {
   opacity: 1;
-}
+} */

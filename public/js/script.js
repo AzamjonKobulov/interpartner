@@ -380,9 +380,8 @@ function init() {
     {},
     {
       iconLayout: "default#image",
-      iconImageHref:
-        "https://www.reshot.com/preview-assets/icons/2L9AVNJ3P5/maps-2L9AVNJ3P5.svg",
-      iconImageSize: [120, 120],
+      iconImageHref: "/public/assets/images/map-tooltip.svg",
+      iconImageSize: [247, 96],
       iconImageOffset: [-19, -44],
     }
   );
