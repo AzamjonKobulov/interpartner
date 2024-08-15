@@ -971,6 +971,9 @@ h2{
 .items-center{
   align-items: center;
 }
+.items-stretch{
+  align-items: stretch;
+}
 .justify-center{
   justify-content: center;
 }
