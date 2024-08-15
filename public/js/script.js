@@ -380,7 +380,7 @@ function init() {
     {},
     {
       iconLayout: "default#image",
-      iconImageHref: "/public/assets/images/map-tooltip.svg",
+      iconImageHref: "/assets/images/map-tooltip.svg",
       iconImageSize: [247, 96],
       iconImageOffset: [-19, -44],
     }
