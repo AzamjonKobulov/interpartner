@@ -971,8 +971,8 @@ h2{
 .items-center{
   align-items: center;
 }
-.items-stretch{
-  align-items: stretch;
+.justify-end{
+  justify-content: flex-end;
 }
 .justify-center{
   justify-content: center;
@@ -1956,11 +1956,6 @@ body.no-scroll {
     --tw-space-y-reverse: 0;
     margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
-  }
-
-  .sm\:px-0{
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .sm\:px-7{
