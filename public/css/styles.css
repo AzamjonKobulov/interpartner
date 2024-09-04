@@ -901,9 +901,9 @@ h2{
 .max-w-full{
   max-width: 100%;
 }
-.max-w-max{
-  max-width: -moz-max-content;
-  max-width: max-content;
+.max-w-min{
+  max-width: -moz-min-content;
+  max-width: min-content;
 }
 .flex-1{
   flex: 1 1 0%;
@@ -947,9 +947,6 @@ h2{
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-.grid-cols-3{
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
 .grid-cols-7{
   grid-template-columns: repeat(7, minmax(0, 1fr));
 }
@@ -970,9 +967,6 @@ h2{
 }
 .items-center{
   align-items: center;
-}
-.justify-end{
-  justify-content: flex-end;
 }
 .justify-center{
   justify-content: center;
@@ -1797,11 +1791,6 @@ body.no-scroll {
 
   .xs\:max-w-\[607px\]{
     max-width: 607px;
-  }
-
-  .xs\:max-w-min{
-    max-width: -moz-min-content;
-    max-width: min-content;
   }
 
   .xs\:grid-cols-2{
