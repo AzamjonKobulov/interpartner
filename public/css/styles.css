@@ -857,6 +857,9 @@ h2{
 .w-screen{
   width: 100vw;
 }
+.w-96{
+  width: 24rem;
+}
 .min-w-\[50\%\]{
   min-width: 50%;
 }
@@ -904,6 +907,9 @@ h2{
 .max-w-min{
   max-width: -moz-min-content;
   max-width: min-content;
+}
+.max-w-40{
+  max-width: 10rem;
 }
 .flex-1{
   flex: 1 1 0%;
@@ -2295,6 +2301,10 @@ body.no-scroll {
 
   .lg\:w-full{
     width: 100%;
+  }
+
+  .lg\:max-w-base{
+    max-width: 122rem;
   }
 
   .lg\:flex-1{
